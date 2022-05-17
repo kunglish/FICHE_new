@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="#6259BD"
+        android:gravity="center_horizontal"
+        android:text="FICHE"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/ib_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="10dp"
+        android:background="#6259BD"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_refresh_32" />
+    <TextView
+        android:id="@+id/tv_student_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:layout_marginBottom="4dp"/>
+
+    <ImageButton
+        android:id="@+id/ib_soccer"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tv_student_number"
+        android:layout_marginStart="15dp"
+        android:background="@color/colorWhite"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_sports_soccer_200" />
+
+    <ImageButton
+        android:id="@+id/ib_basketball"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/tv_student_number"
+        android:layout_marginStart="110dp"
+        android:background="@color/colorWhite"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_sports_basketball_200" />
+
+    <ImageButton
+        android:id="@+id/ib_football"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_student_number"
+        android:layout_marginStart="205dp"
+        android:background="@color/colorWhite"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_sports_football_200" />
+
+    <ImageButton
+        android:id="@+id/ib_more"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_student_number"
+        android:layout_marginStart="310dp"
+        android:background="@color/colorWhite"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_more_horiz_200" />
+
+
+
+
+    <ListView
+        android:id="@+id/lv_all_commodity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view2"
+        android:layout_below="@+id/ib_football"
+        android:layout_marginTop="4dp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/view2"
+        android:layout_marginTop="70dp"
+        android:background="#6259BD" />
+
+    <ImageButton
+        android:id="@+id/ib_home_page"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWhite"
+        android:src="@drawable/ic_baseline_home_32" />
+    <View android:id="@+id/view2"
+        android:layout_width="2dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="130dp"
+        android:background="@color/colorWhite"/>
+
+    <ImageButton
+        android:id="@+id/ib_add_product"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWhite"
+        android:src="@drawable/ic_baseline_add_circle_32" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="2dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="270dp"
+        android:background="@color/colorWhite" />
+
+    <ImageButton
+        android:id="@+id/ib_personal_center"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWhite"
+        android:src="@drawable/ic_baseline_person_center_32" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorBlack" />
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_personal_center1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6259BD"
+        android:gravity="center_horizontal"
+        android:text="PERSONAL CENTER"
+        android:textColor="@color/colorWhite"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_user_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/tv_personal_center1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_user_photo" />
+
+    <TextView
+        android:id="@+id/tv_student_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_user_photo"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_my_goods"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_student_number"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_my_goods"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/btn_my_goods"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_student_number"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBlueLight"
+        android:text="Cards I Post"
+        android:textSize="20sp" />
+    <ImageView
+        android:id="@+id/iv_my_collection"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iv_my_goods"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_my_collection"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/btn_my_collection"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_my_goods"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBlueLight"
+        android:text="My collection"
+        android:textSize="20sp" />
+    <ImageView
+        android:id="@+id/iv_modify_password"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iv_my_collection"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_modify_pwd"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerCrop"/>
+    <Button
+        android:id="@+id/btn_modify_password"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:text="Change Password"
+        android:textSize="20sp"
+        android:layout_below="@+id/btn_my_collection"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBlueLight"/>
+    <ImageView
+        android:id="@+id/iv_about_app"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/iv_modify_password"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_about_us"
+        android:layout_marginStart="20dp"
+        android:scaleType="centerCrop"/>
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:text="Sign out"
+        android:textSize="20sp"
+        android:layout_below="@+id/btn_modify_password"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBlueLight"/>
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorGreen"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:text="BACK"
+        android:textSize="20sp" />
+
+</RelativeLayout>

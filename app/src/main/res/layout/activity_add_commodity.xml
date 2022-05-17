@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/tv_publish_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6259BD"
+        android:gravity="center_horizontal"
+        android:text="Post your item"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#6259BD"
+        android:foregroundGravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_back_32" />
+
+    <TextView
+        android:id="@+id/tv_user_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_publish_info"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_add_photo"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_user_id"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Add pictures"
+        android:textSize="16sp" />
+    <ImageButton
+        android:id="@+id/iv_photo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/icon_take_photo"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/tv_user_id"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="120dp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv_photo"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Product name"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv_photo"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:hint="Please enter product name"
+        android:maxLines="1"
+        android:textColor="@color/colorBlue"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Category"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spn_type"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_title"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/product_type" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_type"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Price"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/spn_type"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:hint="Please enter a price"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:textColor="@color/colorBlue"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_price"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Contact information"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_price"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:hint="Please enter contact information"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:textColor="@color/colorBlue"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_phone"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Product details"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_phone"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="20dp"
+        android:hint="Please enter a product description"
+        android:maxLines="1"
+        android:textColor="@color/colorBlue"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_description"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFC107"
+        android:text="Release"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>
